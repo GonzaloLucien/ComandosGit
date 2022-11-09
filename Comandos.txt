@@ -1,0 +1,77 @@
+Ver version de git (asegurarse que está instalado en cmd):
+git --version
+
+Cacheo del token personal:
+git config --global credential.helper wincred  "para acreditar siempre los cambios sin introducir contraseña"
+git config --global credential.helper 'cache --timeout=10800'  "para acreditar identidad por tiempo x en segundos"
+
+Configuración de usuario:
+git config --global user.name “Nombre”
+git config --global user.email “email@gmail.com”
+
+Ver las configuraciones:
+git config --list
+
+Limpiar pantalla:
+cls (en cmd)   o   clear (git)
+
+Iniciar (crea carpeta .git):
+git init
+
+Vincular con github:
+git remote add origin URL
+
+Reiniciar vínculo URL:
+git remote set-url origin URL
+
+Status:
+git status
+
+Add:
+git add nombredealchivo o .(todos)
+
+Commit:
+git commit -m "Nombre del commit"
+
+Push definitivo a github:
+git push origin main/master(rama)
+
+Ver rama:
+git branch
+git show-branch 
+
+Crear rama:
+git branch nombreRama
+
+Ir a rama:
+git checkout nombreRama
+
+Renombrar rama:
+git branch -m nombreRama
+
+Crear e ir a la rama:
+git checkout -b nobreRama
+
+Importar ramas a mi rama actual:
+git merge nombreRamaATraer -m "mensaje"
+
+Pushear ramas a github:
+git push -u origin nombreRama
+
+Pullear ramas de github:
+git fectch
+
+Borrar ramas:
+git branch -d nombreRamaABorrar
+
+Borrar ramas GitHub:
+git push origin --delete nombreRamaABorrar
+
+Ver commits:
+git log
+
+Para volver a los commits copiamos el numero/letras largo del commit:
+git checkout numeroLargoDelCommit
+
+Clonar:
+git clone URL
