@@ -59,7 +59,7 @@ Pushear ramas a github:
 git push -u origin nombreRama
 
 Pullear ramas de github:
-git fectch
+git fetch
 
 Borrar ramas:
 git branch -d nombreRamaABorrar
@@ -73,5 +73,14 @@ git log
 Para volver a los commits copiamos el numero/letras largo del commit:
 git checkout numeroLargoDelCommit
 
+Para hacer del estado actual el estado permanente:
+?
+
 Clonar:
 git clone URL
+
+ignore:
+crear una carpeta .gitignore
+crear dentro un documento de texto
+escribir dentro el nombre del archivo a ignorar con un /
+o .tipoDeArchivo a ignorar
